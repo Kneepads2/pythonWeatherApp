@@ -10,7 +10,7 @@ city_name = input("Enter city name: ")
 
 #getting coordinates of the city using a geocoding api
 geocode_url = f'https://api.api-ninjas.com/v1/geocoding?city={city_name}'
-headers = {'X-Api-Key': 'Xg5wr2TvKAV+B/IdnhSSHA==6z6HTIsHWJfGvgWH'}
+headers = {'X-Api-Key': 'API_KEY'} #get an api key from api ninjas, just make an account
 
 #make request
 geocode_response = requests.get(geocode_url, headers=headers)
